@@ -41,7 +41,16 @@
             helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             menuStrip1 = new System.Windows.Forms.MenuStrip();
             panel1 = new System.Windows.Forms.Panel();
+            checkBox1 = new System.Windows.Forms.CheckBox();
+            trackBar1 = new System.Windows.Forms.TrackBar();
+            progressBar1 = new System.Windows.Forms.ProgressBar();
+            radioButton1 = new System.Windows.Forms.RadioButton();
+            tabControl1 = new System.Windows.Forms.TabControl();
+            tabPage1 = new System.Windows.Forms.TabPage();
+            tabPage2 = new System.Windows.Forms.TabPage();
             menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
+            tabControl1.SuspendLayout();
             SuspendLayout();
             // 
             // button1
@@ -141,12 +150,82 @@
             panel1.TabIndex = 2;
             panel1.Tag = "WinUIForms_Ignore";
             // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new System.Drawing.Point(289, 184);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new System.Drawing.Size(83, 19);
+            checkBox1.TabIndex = 3;
+            checkBox1.Text = "checkBox1";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // trackBar1
+            // 
+            trackBar1.Location = new System.Drawing.Point(252, 278);
+            trackBar1.Name = "trackBar1";
+            trackBar1.Size = new System.Drawing.Size(104, 45);
+            trackBar1.TabIndex = 4;
+            // 
+            // progressBar1
+            // 
+            progressBar1.Location = new System.Drawing.Point(493, 177);
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new System.Drawing.Size(100, 23);
+            progressBar1.TabIndex = 5;
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Location = new System.Drawing.Point(133, 186);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new System.Drawing.Size(94, 19);
+            radioButton1.TabIndex = 6;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "radioButton1";
+            radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // tabControl1
+            // 
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Location = new System.Drawing.Point(489, 264);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new System.Drawing.Size(200, 100);
+            tabControl1.TabIndex = 7;
+            // 
+            // tabPage1
+            // 
+            tabPage1.Location = new System.Drawing.Point(4, 24);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            tabPage1.Size = new System.Drawing.Size(192, 72);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "tabPage1";
+            tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            tabPage2.Location = new System.Drawing.Point(4, 24);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            tabPage2.Size = new System.Drawing.Size(192, 72);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "tabPage2";
+            tabPage2.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.Black;
             ClientSize = new System.Drawing.Size(800, 450);
+            Controls.Add(tabControl1);
+            Controls.Add(radioButton1);
+            Controls.Add(progressBar1);
+            Controls.Add(trackBar1);
+            Controls.Add(checkBox1);
             Controls.Add(panel1);
             Controls.Add(button1);
             Controls.Add(menuStrip1);
@@ -157,6 +236,8 @@
             Load += Form1_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
+            tabControl1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -176,5 +257,12 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
     }
 }
